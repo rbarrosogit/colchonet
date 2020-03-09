@@ -77,9 +77,27 @@ header nav {
 }
 
 #content {
+
+  table {
+    margin: 25px auto;
+  }
+
+  tr, th {
+    font-size: 30px;
+  }
+
+  td {
+    font-size: 25px;
+  }
+
+  strong {
+    font-size: 30px;
+  }
+
   text-align: center;
   width: $body-width;
   margin: 0 auto;
+  font-size: 30px;
 
   h1 {
     font-size: 50px;
@@ -91,10 +109,12 @@ header nav {
     &:hover {
       text-decoration: underline;
     }
+    margin: auto 25px;
   }
 
   ul, form, p {
-    margin: 10px 0;
+    margin: 25px 0;
+    font-size: 30px;
   }
 }
 
@@ -112,7 +132,7 @@ form {
     font-size: 20px;
     border: 1px solid #ccc;
     padding: 5px;
-    width: 200px;
+    width: 250px;
     outline: 0;
 
     @include shadow(rgba(0,0,0, 0.1), 0px, 0px, 8px);
@@ -122,8 +142,9 @@ form {
   }
 
   textarea {
-    width: 400px;
+    width: 250px;
     height: 200px;
+
   }
 }
 
@@ -132,23 +153,34 @@ form {
 
   label { color: $error-text-color; }
 
-  input[type=text], input[type=password], textarea {
+
+  input[type=text], input[type=password] {
     border: 1px solid rgba(189, 74, 72, 0.5);
     @include shadow (rgba(189, 74, 72, 0.2), 0px, 0px, 8px);
 
     &:focus { border: 1px solid rgba(189,74,72, 0.6); }
+
+    margin-left: 100px;
+
+  }
+
+  textarea {
+    border: 1px solid rgba(189, 74, 72, 0.5);
+    @include shadow (rgba(189, 74, 72, 0.2), 0px, 0px, 8px);
+
+    &:focus { border: 1px solid rgba(189,74,72, 0.6); }
+
   }
 }
 
 .error_message {
-  margin-left: 5px;
   display: inline;
   color: $error-text-color;
 }
 
 .padded_flash {
   padding: 10px;
-  margin: 10px 0;
+  margin: auto;
   font-weight: bold;
   width: 500px;
 }
