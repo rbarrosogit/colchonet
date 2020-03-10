@@ -1,6 +1,6 @@
 <% if @user.errors.any? %>
   <div id="error_explanation">
-   Não foi possivel criar seu cadastro, por favor verifique.
+    <%= t 'general.form_error' %>
    </div>
 <% end %>
 
@@ -37,6 +37,6 @@
 
 </p>
 <p>
-    <%= f.submit %>
+  <%= f.submit class:'botao' %>
 </p>
 <% end %>

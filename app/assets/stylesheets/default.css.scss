@@ -113,7 +113,11 @@ header nav {
   }
 
   ul, form, p {
-    margin: 25px 0;
+    margin: 25px auto;
+    font-size: 30px;
+  }
+
+  li {
     font-size: 30px;
   }
 }
@@ -204,4 +208,8 @@ form {
   border: 1px solid $error-text-color;
   @extend .padded_flash;
   background-color: #F2DEDE;
+}
+
+.botao {
+  width: 200px;
 }
