@@ -1,5 +1,14 @@
 ---
 pt-BR:
+  signup_mailer:
+    confirm_email:
+      subject: 'Colcho.net do Rodrigo - Confirme seu email!'
+      title: 'Seja bem vindo ao Colcho.net do Rodrigo!'
+      body: |
+          Seja bem vindo ao Colcho.net, %{full_name}.
+          O Colcho.net do Rodrigo tem os melhores quartos pertinho para você, por um preço camarada.
+      confirm_link_html: 'Para você começar a usar o site, acesse o link: %{link}'
+      thanks_html: 'Obrigado por se cadastrar no %{link}.'
   users:
     name: Nome
     new:
@@ -25,6 +34,7 @@ pt-BR:
     title: 'Nome:'
     location: 'Localização:'
     description: 'Descrição:'
+    complete_name: "%{title}, %{location}"
     new:
       title: Novo Quarto
     edit:
