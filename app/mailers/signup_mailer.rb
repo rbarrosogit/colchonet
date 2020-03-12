@@ -3,9 +3,11 @@ class SignupMailer < ActionMailer::Base
 
   def confirm_email(user)
     @user = user
-    @confirmation_link = root_url
+    @confirmation_link = confirmation_url ({
+      token: @user.confirmation_token
+    })
 
-    mail({
+    mail ({
       to: user.email,
       bcc: ['cadastros <cadastro@colcho,net>'],
       subject: I18n.t('signup_mailer.confirm_email.subject')

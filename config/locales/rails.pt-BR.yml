@@ -1,5 +1,14 @@
 ---
 pt-BR:
+  flash:
+    notice:
+      signed_in: 'Você está logado!'
+  user_sessions:
+    new:
+      title: Login
+      sign_up: Criar cadastro
+  confirmations:
+    success: 'Conta confirmada com sucesso!'
   signup_mailer:
     confirm_email:
       subject: 'Colcho.net do Rodrigo - Confirme seu email!'
@@ -40,6 +49,14 @@ pt-BR:
     edit:
       title: Editar quarto
 
+  activemodel:
+    attributes:
+      user_session:
+        email: Email
+        password: Senha
+    errors:
+      messages:
+        invalid_login: 'Usuário ou senha inválidos'
   activerecord:
     models:
       user: Usuário
@@ -203,6 +220,8 @@ pt-BR:
     select:
       prompt: Por favor selecione
     submit:
+      user_session:
+        create: 'Entrar'
       create: Criar %{model}
       submit: Salvar %{model}
       update: Atualizar %{model}
