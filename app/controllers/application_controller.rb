@@ -9,8 +9,9 @@ class ApplicationController < ActionController::Base
       { locale: I18n.locale }
     end
 
-    delegate :current_user, :user_signed_in?, to: :user_session
-    helper_method :current_user, :user_signed_in?
+    delegate :user_id, :current_user, :user_signed_in?, to: :user_session
+    helper_method :user_id, :current_user, :user_signed_in?
+
 
     def user_session
       UserSession.new(session)

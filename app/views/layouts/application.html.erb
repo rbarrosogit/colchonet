@@ -12,16 +12,16 @@
         <div id="header-wrap">
           <h1><%= link_to "ColchoNet do Rodrigo", root_path, style: 'color:#00008b;' %></h1>
           <% if user_signed_in? %>
-            <% render 'layouts/user_navbar' %>
+            <%= render 'layouts/user_navbar' %>
           <% else %>
-            <% render 'layouts/visitor_navbar' %>
+            <%= render 'layouts/visitor_navbar' %>
           <% end %>
         </div>
       </header>
 
       <div id="content">
-      <% if notice.present? %>
-        <p id="notice"><%= notice %></p>
+        <% if notice.present? %>
+          <p id="notice"><%= notice %></p>
         <% end %>
         <% if alert.present? %>
           <p id="alert"><%= alert %></p>

@@ -1,8 +1,12 @@
 ---
 pt-BR:
   flash:
+    alert:
+      needs_login: "Vocẽ precisa estar logado para continuar"
     notice:
       signed_in: 'Você está logado!'
+      signed_out: 'Você foi deslogado. Até mais!'
+      already_logged_in: "Você já está logado."
   user_sessions:
     new:
       title: Login
@@ -37,6 +41,11 @@ pt-BR:
   layout:
     rooms: Quartos
     signup: Cadastro
+    new_room: Crie seu quarto
+    my_profile: Meu perfil
+    signout: Logout
+    signin: Login
+
   general:
     form_error: Não foi possivel criar seu cadastro, por favor verifique.
   rooms:
