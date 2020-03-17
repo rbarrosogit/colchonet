@@ -9,6 +9,7 @@ class User < ApplicationRecord
     end
 
     #EMAIL_REGEXP = /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
+    has_many :rooms
     validates :email, :full_name, :location, :bio, presence: true
     validates :bio, length: { in: 5..20 }, allow_blank: false
     #validate :email_format

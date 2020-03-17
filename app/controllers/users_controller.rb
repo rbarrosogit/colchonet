@@ -15,7 +15,9 @@ class UsersController < ApplicationController
             render action: :new
         end
     end
-
+    
+    private
+    
     def user_params
         params.require(:user).permit(:full_name, :location, :email, :password, :password_confirmation, :bio)
     end

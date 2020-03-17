@@ -7,6 +7,7 @@ pt-BR:
       signed_in: 'Você está logado!'
       signed_out: 'Você foi deslogado. Até mais!'
       already_logged_in: "Você já está logado."
+      room_created: "Quarto criado com sucesso!"
   user_sessions:
     new:
       title: Login
@@ -29,7 +30,7 @@ pt-BR:
     edit:
       title: Editar perfil
     show:
-      title: "Perfil: %{user_name}"
+      title: "Perfil: %{full_name}"
       edit: 'Editar perfil'
       location: "Localização: %{location}"
       bio: "Bio: %{bio}"
