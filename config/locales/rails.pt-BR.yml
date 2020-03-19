@@ -1,5 +1,7 @@
 ---
 pt-BR:
+  dialogs:
+    destroy: "Você tem certeza que quer remover?"
   flash:
     alert:
       needs_login: "Vocẽ precisa estar logado para continuar"
@@ -50,6 +52,14 @@ pt-BR:
   general:
     form_error: Não foi possivel criar seu cadastro, por favor verifique.
   rooms:
+    index:
+      title: 'Quartos disponíveis'
+      edit: "Editar"
+      destroy: "Apagar"
+    room:
+      owner_html: '&mdash; %{owner} (%{when})'
+      edit: "Editar"
+      destroy: "Apagar"
     title: 'Nome:'
     location: 'Localização:'
     description: 'Descrição:'

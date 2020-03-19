@@ -1,17 +1,1 @@
-<p>
-  <%= t('rooms.title') %>
-  <%= @room.title %>
-</p>
-
-<p>
-  <%= t('rooms.location') %>
-  <%= @room.location %>
-</p>
-
-<p>
-  <%= t('rooms.description') %>
-  <%= @room.description %>
-</p>
-
-<%= link_to t('links.edit'), edit_room_path(@room) %> |
-<%= link_to t('links.back'), rooms_path %>
+<%= render @room %>
