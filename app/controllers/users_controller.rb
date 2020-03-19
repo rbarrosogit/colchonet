@@ -16,10 +16,8 @@ class UsersController < ApplicationController
         end
     end
     
-    private
-    
     def user_params
-        params.require(:user).permit(:full_name, :location, :email, :password, :password_confirmation, :bio)
+        params.require(:user).permit(:user_id, :full_name, :location, :email, :password, :password_confirmation, :bio)
     end
 
     def can_change
