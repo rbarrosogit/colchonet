@@ -2,6 +2,7 @@
   <% if room.show_form? %>
     <%= render partial: 'review_form', locals: {room: room} %>
   <% else %>
+    
     <% room.stars.times do %>
       <span class="star filled_star"></span>
     <% end %>
@@ -10,6 +11,6 @@
       <span class="star empty_star"></span>
     <% end %>
 
-    <%= t '.stats', count: room.total_reviews %>
+    <%= t '.stars', count: room.total_reviews %>
   <% end %>
 </section>

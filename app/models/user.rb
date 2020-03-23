@@ -1,6 +1,7 @@
 class User < ApplicationRecord
     has_many :rooms, dependent: :destroy
     has_many :reviews, dependent: :destroy
+    scope :most_recent, -> { order('created_at DESC') }
     scope :confirmed, -> { where.not(confirmed_at: nil) }
 
     def self.authenticate(email, password)

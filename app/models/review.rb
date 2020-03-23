@@ -9,4 +9,5 @@ class Review < ApplicationRecord
   def self.stars
     (average(:points) || 0).round
   end
+  
 end
