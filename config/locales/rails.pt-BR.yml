@@ -54,6 +54,7 @@ pt-BR:
   rooms:
     index:
       title: 'Quartos disponíveis'
+      search_results: 'Resultados da busca'
       edit: "Editar"
       destroy: "Apagar"
     room:
@@ -66,6 +67,8 @@ pt-BR:
         other: '(%{count} avaliações)'
     review_form:
       login_to_review: 'Faça login para avaliar quartos'
+    search:
+      search_for: 'Buscar por...'
     title: 'Nome:'
     location: 'Localização:'
     description: 'Descrição:'
@@ -100,6 +103,7 @@ pt-BR:
         description: Descrição
         location: Localização
         title: Título
+        picture: Foto
     errors:
       messages:
         record_invalid: 'A validação falhou: %{errors}'
